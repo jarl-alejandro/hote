@@ -1,0 +1,6 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^compartetucodigo\.uejp\.edu\.ec$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.compartetucodigo\.uejp\.edu\.ec$
+RewriteRule ^/?$ "http\:\/\/compartetucodigo\.org" [R=301,L]
+

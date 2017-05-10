@@ -1,0 +1,1142 @@
+	html, body{
+	font-size: 16px;
+	min-height: 100%;
+  width: 100%;
+	margin: 0;
+	background: #F0F0F0;
+	font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+}
+img{
+  max-width: 100%;
+  max-height: 100%;
+}
+footer{
+  background-color: #585650;
+  display: flex;
+  align-self: flex-end;
+  width: 100%;
+  justify-content: space-between;
+  color: #F0F0F0;
+}
+footer h4{
+  margin: 0;
+  margin-bottom: .2em;
+}
+label:after{
+	content: "*"
+}
+#ModalSalir{
+  display: none;
+  position: fixed;
+  top: 7em;
+  left: 30%;
+  padding: 0;
+  width: 30em;
+}
+#modalClient{
+  position: fixed;
+  top: 1em;
+  left: 5%;
+  display: none;
+}
+#PagosByDate{
+  position: fixed;
+  top: 6em;
+  left: 20%;
+  display: none;
+}
+#BuildModal{
+	position: absolute;
+	top: 3em;
+}
+#message-reservas{
+	text-align: right;
+	color: #f44336;
+	font-size:1.2em;
+}
+.u-center{
+  justify-content: center;
+}
+.row-flex{
+  display: flex;
+  align-items: center;
+  margin-left: 1em;
+  width: 56%;
+}
+.row-flex div{
+	position: relative;
+}
+.cards_habitacion{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+	margin-top: 1em;
+}
+.cards_habitacion.col{
+  float: none !important;
+}
+.color-toolbar{
+  background-color: #bfa145 !important;
+}
+.u-relative{
+  position: relative;
+}
+.u-absolute{
+  position: absolute !important;
+}
+.u-flex-end{
+  display: flex;
+  justify-content: flex-end;
+}
+.u-center-flex{
+  display: flex;
+  align-items: center;
+}
+.u-pointer{
+  cursor: pointer;
+}
+.color-acent{
+  background: #585650 !important;
+}
+.acent-text{
+  color: #585650 !important;
+}
+.u-no_margin__top{
+  margin-top: 0;
+}
+.u-no_margin__bottom{
+  margin-bottom: 0;
+}
+.margin-bottom{
+  margin-bottom: 1em;
+}
+.no-margin{
+  margin: 0;
+}
+.u-flex-centerV{
+  display: flex;
+  align-items: center;
+}
+.u-ocultar, .u-oculto{
+	background: rgba(0,0,0,0.2);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+	display: none;
+  overflow: hidden;
+  height: 100%;
+}
+.u-img-circle{
+  border-radius: 50%;
+}
+.u-none{
+  display: none;
+}
+.u-no-margin{
+  margin: 0;
+}
+.u-title-form{
+  margin: 0em;
+  font-size: 2.2em;
+  padding: 4px 0;
+}
+.u-bottom-small{
+  margin-bottom: 1em;
+}
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.space-between{
+  justify-content: space-between;
+}
+.nombre-card{
+  background: rgba(0,0,0,0.5);
+  position: absolute;
+  right: 0;
+  left: 0;
+  text-align: center;
+  padding: 8px !important;
+  font-weight: bold !important;
+}
+.Header{
+	background: #bfa145;
+	color: #F0F0F0;
+	display: flex;
+	/*justify-content: space-between;*/
+	align-items: center;
+	height: 4em;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+	position: fixed;
+	z-index: 1700;
+	width: 100%;
+	top: 0;
+}
+.Header-buscador{
+  width: 2em;
+  overflow: hidden;
+  position: absolute;
+  right: 8.5em;
+  margin: 0;
+  transition: all ease .3s;
+}
+.Header-buscador--activo{
+  width: 15em;
+  transition: all ease .3s;
+}
+.Header-buscador label{
+  margin-right: 11px;
+  cursor: pointer;
+}
+.close_buscador{
+  cursor: pointer;
+}
+.Header-buscador input{
+  border-bottom: 1px solid white !important;
+}
+.Header-buscador input:focus{
+  box-shadow: 0 1px 0 0 #F0F0F0 !important;
+}
+.Header-salir{
+  position: absolute;
+  right: 1em;
+}
+.Header-salir a{
+  padding: 0 10px;
+  background: #585650 !important;
+  display: flex;
+}
+.Header-salir a i{
+  margin-left: 5px;
+}
+
+.Header-title{
+	margin: 0;
+	margin-left: 1em;
+}
+.Header-title h1{
+	font-size: 2em;
+}
+.Header-button--toolbar{
+	margin-left: 2em;
+	outline: none;
+	border: 0;
+	background: transparent;
+	height: 63px;
+	transition: all .3s;
+	cursor: pointer;
+	width: auto;
+}
+.Header-icons--line{
+	display: inline-block;
+	width: 30px;
+	background: white;
+	transition: all .3s;
+	height: 3.71429px;
+	position: relative;
+}
+.Header-icons--line:before{
+	top: 8px;
+}
+.Header-icons--line:after{
+	top: -8px;
+}
+
+.Header-icons--line:before, .Header-icons--line:after{
+	display: inline-block;
+	height: 3.71429px;
+	width: 100%;
+	background: white;
+	position: absolute;
+	content: "";
+	left: 0;
+	transition: top .3s .6s ease, transform .3s ease;
+}
+.Header-transform .Header-icons--line{
+	background: transparent;
+	transform: scale3d(0.8, 0.8, 0.8);
+}
+.Header-transform .Header-icons--line:before, .Header-transform .Header-icons--line:after{
+	transform-origin: 50% 50%;
+	top: 0;
+	width: 40px;
+	transition: top .3s ease, transform .3s .5s ease;
+}
+.Header-transform .Header-icons--line:before{
+	transform: rotate3d(0, 0, 1, 45deg);
+}
+.Header-transform .Header-icons--line:after{
+	transform: rotate3d(0, 0, 1, -45deg);
+}
+
+.Toolbar{
+	background: #585650;
+	width: 17em;
+	position: fixed;
+	left: -18em;
+	height: 100%;
+	box-shadow: 0px 1px 1.5px rgba(0,0,0,9.5);
+	transition: all .5s;
+	top: 4em;
+	z-index: 1500;
+}
+.Toolbar-active{
+	left: 0em;
+}
+.Toolbar-menu--top{
+  position: relative;
+  top: -14em !important;
+  transition: all ease .5s;
+  z-index: -1;
+}
+.Toolbar-logo{
+  position: relative;
+  top: 2em;
+  left: 34%;
+  margin: 0;
+}
+.Toolbar-menu{
+	padding-left: 0;
+	list-style: none;
+}
+
+.Toolbar-menu--item{
+	display: flex;
+  flex-wrap: wrap;
+  transition: all .5s;
+  position: relative;
+  transition: all ease .3s;
+}
+.Toolbar-menu--item:nth-child(1){
+	margin-top: 1em;
+}
+.Toolbar-menu--item:hover, .Toolbar-submenu li:hover{
+	box-shadow: 17em 0 rgba(255,255,255,0.5) inset;
+}
+.Toolbar-menu--active{
+  transition: all ease .3;
+  box-shadow: 17em 0 rgba(255,255,255,0.5) inset;
+}
+
+.Toolbar-menu--item a{
+	color: #F0F0F0;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 3em;
+	transition: all .3s;
+}
+
+.Toolbar-menu--item a:hover{
+	margin-left: 1em;
+}
+
+.Toolbar-menu--item .material-icons{
+	margin-left: 1em;
+	margin-right: .5em;
+}
+.Toolbar-submenu{
+  width: 100%;
+  background: #bfa145;
+  color: #F0F0F0;
+  display: none;
+}
+.Toolbar-submenu li{
+  overflow: hidden;
+  border-bottom: 1px solid #F0F0F0;
+  display: block;
+  transition: all .3s;
+}
+.Toolbar-submenu li:last-child{
+  border-bottom: 0px;
+}
+.Layout{
+	margin: 0 auto;
+	width: 90%;
+  position: relative;
+  top: 2em;
+  /*margin-top: 5em;*/
+}
+
+@media only screen and (max-width: 600px){
+  .space-between{
+    justify-content: center;
+  }
+  .cancelar{
+    margin-right: .5em;
+  }
+}
+
+.Alerta, .Alerta-ingreso, .Alerta-bloquear {
+  position: absolute;
+  top: 5em;
+  left: 30%;
+  width: 30%;
+  display: none;
+  z-index: 2000;
+}
+.Alerta-header{
+  background: #e3757e;
+  text-align: center;
+  color: white;
+}
+.Alerta-header i{
+  font-size: 6rem;
+}
+.Alerta-body h3{
+  font-size: 2em;
+  margin: 1em 0 0 0;
+}
+.Alerta-body h4{
+  font-size: 1em;
+  margin: 3px 0 1em 0;
+  font-weight: normal;
+}
+.Alerta-boton{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+.Alerta-cancelar{
+  margin-right: .5em;
+}
+.Alerta-eliminar, .Alerta-huesped, .Alerta-ingresar, .Alerta-desbloquear {
+  background: #e3757e;
+}
+.Alerta-eliminar, .Alerta-cancelar, .Alerta-huesped, .Alerta-ingresar, .Alerta-desbloquear{
+  border: 0;
+  border-radius: 5%;
+  color: white;
+  display: flex;
+  align-items: center;
+  width: 8em;
+  height: 2em;
+  justify-content: center;
+}
+.Imagen-habitacion{
+  width: 100%;
+  background: #eee;
+  height: 10em;
+}
+.full-height{
+  height: 100%;
+}
+/* Iniciar Session*/
+.Layout-Login{
+  display: flex;
+  justify-content: center;
+  height: 90%;
+  align-items: center;
+  width: 100%;
+}
+.form-card{
+  width: 29em;
+  padding: 1em;
+}
+.title-login{
+  margin: 0;
+  text-align: center;
+  font-size: 2em;
+  color: #6d6d6d;
+}
+.center-block{
+  display: block;
+  margin: 0 auto;
+}
+.Reservas-Habitaciones{
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  height: 28em;
+  width: 96%;
+  /*background: #ef5350;*/
+  margin: 0 auto;
+}
+.space{
+  justify-content: space-around;
+}
+.form-cliente{
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.Reservas-active{
+  position: relative;
+  margin-bottom: 1em !important;
+}
+.oculta-habitacion{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(255,255,255,0.5);
+  z-index: 1000;
+}
+.cinta{
+  font-weight: bold;
+  position: absolute;
+  z-index: 100;
+  right: 0em;
+  top: 4em;
+  padding: .5em 2em;
+  display: none;
+}
+.ReservasForm{
+	position: relative;
+	top: -7em;
+}
+.Reservas-formularios{
+	position: absolute;
+  z-index: 1111;
+  left: 19% !important;
+  top: -5em;
+}
+.Reservas-formularios-cliente{
+  position: fixed;
+  z-index: 1111;
+  left: 24% !important;
+  top: 1em;
+}
+.HabitacionForm{
+  position: absolute;
+  top: 8em;
+  left: 11%;
+  z-index: 11111111111111;
+  width: 30em;
+
+}
+.HabitacionForm-title{
+  margin: 0;
+  text-transform: uppercase;
+}
+.HabitacionForm-gastos{
+  width: 100%;
+}
+.ventas{
+  position: absolute;
+  top: 7em;
+  left: 10% !important;
+  background: #eee;
+  width: 70%;
+  z-index: 10000;
+  padding: .5em 0em;
+}
+.ventas-row{
+  width: 100% !important;
+}
+.Productos-Acabados{
+  position: absolute;
+  right: 4em;
+  bottom: 4em;
+}
+.panel-productos{
+  margin-bottom: .5em;
+  padding: .5em 2em;
+}
+.FormProductoAcabados{
+  position: absolute;
+  top: 5em;
+  left: 28%;
+  z-index: 10000;
+  width: 30em !important;
+}
+.FormProductoAcabados h3{
+  margin: 0;
+  text-align: center;
+  color: #585650;
+}
+
+.KardexHeader-title h5{
+  margin: 0;
+  text-align: center;
+  padding-top: 1em;
+}
+.KardexHeader-prod h6{
+  font-weight: bold;
+  margin-left: 1em;
+}
+.KardexHeader-footer {
+  padding: 1em 0;
+}
+.productos-list{
+  width: 25em;
+  position: absolute;
+  top: 0.8em;
+  background: white;
+  z-index: 11111;
+  left: 34%;
+  display: none;
+}
+.productos-list .Productos-body{
+  background: white;
+  padding-bottom: 1em;
+}
+.habitacionesContainer{
+  position: absolute;
+  background: #f0f0f0;
+  top: 5em;
+  z-index: 1111;
+  left: 13% !important;
+  display: none;
+}
+.CuadreCaja{
+  position: absolute;
+  top: 14em;
+  width: 31em;
+  z-index: 111;
+  padding: .5em;
+  display: none;
+}
+.monedas-cuadre{
+  display: none;
+  padding: 1em;
+  position: absolute;
+  top: 14em;
+  left: 28em;
+  z-index: 111;
+  width: 30em;
+}
+.boxed{
+ width: 5em;
+}
+.imagen-mas{
+  width: 78em !important;
+}
+.ReportList{
+  position: absolute;
+  top: 10em;
+  left: 20%;
+  z-index: 111111111;
+  display: none;
+  width: 48em;
+}
+.RotacionFecha{
+ position: absolute;
+ padding: .5em;
+ display: none;
+ top: -3em;
+ left: 20%;
+ z-index: 111;
+ width: 48em;
+}
+.formCliente{
+  position: absolute;
+  top: 6em;
+  left: 5%;
+  z-index: 111;
+  width: 90%;
+  display: none;
+}
+.Promocion{
+  position: absolute;
+  top: 7em;
+  left: 27%;
+  width: 35em;
+  z-index: 1111;
+  display: none;
+}
+.promocion-cinta{
+  float:right;
+}
+.antes-cinta{
+  position: absolute;
+  width: 43px;
+  height: 2px;
+  transform: rotate(-20deg);
+  top: .7em;
+  right: .4px;
+}
+
+.btn-atajos{
+	position: relative;
+}
+
+.toolhelper{
+	background: rgba(0, 0, 0, 0.8);
+	position: absolute;
+	padding: 5px 12px;
+	left: -23px;
+	top: 3.5em;
+	border-radius: 1px;
+	display: none;
+	width: 10em;
+	text-align: center;
+}
+
+.title-layout{
+	font-size: 2em;
+	margin-bottom: .7em;
+	position: relative;
+	margin: 9px 0;
+	top: 2em;
+	height: 1em;
+  /*margin-top: 1em;*/
+  text-shadow: -2px -2px 2px rgba(150, 150, 150, 1);
+  margin-left: 0.5em;
+  text-transform: uppercase;
+	margin-bottom: .7em;
+}
+
+.modal{
+	z-index: 1111111111 !important;
+}
+
+#new-client{
+	position: relative;
+	top: -1em;
+	left: 35em;
+}
+
+.disponible-map span, .ocupados-map span, .mantenimiento-map span, .reservadas-map span, .limpieza-map span{
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+}
+
+.disponible-map, .ocupados-map, .mantenimiento-map, .reservadas-map, .limpieza-map{
+	display: flex;
+	align-items: center;
+	width: 9.5em;
+	padding: 0;
+}
+
+.disponible-map strong, .ocupados-map strong, .mantenimiento-map strong, .reservadas-map strong, .limpieza-map strong{
+	margin-left: 6px;
+}
+
+.numeroHabitacion, .numberHabi{
+  height: 4em !important;
+  transition: all ease .5s;
+  cursor: pointer;
+}
+
+.numeroHabitacion:hover, .numberHabi:hover{
+  background: #bfa145;
+  color: white;
+  box-shadow: 0px 1px 1.5px rgba(0,0,0,0.5);
+}
+
+.numeroHabitacion h4, .numberHabi h4{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.habitacion-modal{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  z-index: 10000;
+}
+.notify-front{
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  position: absolute;
+  top: 2em;
+  right: 2em;
+  z-index: 1111111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notify, .notify-salir{
+  color: white;
+  font-weight: bold;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  position: absolute;
+  top: 2em;
+  left: 2em;
+  z-index: 1111111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.items__alquiler{
+  display: flex;
+}
+.items__alquiler p{
+  margin-left: 1em;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.userProfile{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.userProfile figure{
+  margin: 0em;
+}
+
+.userProfile figure img{
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+}
+.username, .nivel{
+  margin: 0em;
+  text-transform: capitalize;
+}
+.username{
+  font-size: 2em;
+}
+.nivel{
+  font-size: 1em;
+  font-style: italic;
+}
+.label-avatar{
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.FormPassword{
+  position: relative;
+  top: -2em;
+  right: -7em !important;
+}
+
+
+.reloj{
+  display: flex;
+  font-size: 2em;
+  margin-right: 1em;
+}
+
+.reloj p{
+  margin: 0;
+}
+.ampm{
+  margin-right: 1em;
+  font-size: 15px;
+  align-self: flex-end;
+}
+
+.fecha {
+  margin-left: 1em;
+  display: flex;
+  font-size: 1.5em;
+  justify-content: space-around;
+  align-items: center;
+  width: 16em;
+}
+.fecha p {
+  margin: 0
+}
+
+.PasswordSection{
+  position: fixed;
+  display: none;
+  top: 8em;
+  left: 17%;
+  padding: 1em;
+}
+.PasswordSection-title{
+  margin-top: 3px;
+}
+.form{
+  position: relative;
+  z-index: 1111;
+}
+.btn{
+  cursor: pointer;
+}
+.msg-day-hosped{
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+#dayHosped{
+  margin-left: 2px;
+  margin-right: 2px;
+}
+.list-options li{
+  cursor: pointer;
+}
+
+.mapa-min{
+  flex-wrap: wrap;
+}
+.min-sig{
+  display: none;
+  height: 3em;
+}
+.min-sig span{
+ width: 20px;
+ height: 20px;
+ margin-right: 6px;
+ border: 1px solid white;
+ display: inline-block;
+}
+
+.min-sig a{
+  padding:0em !important;
+}
+.min-sig ul{
+  width: 46em;
+  justify-content: space-around;
+  margin: 0;
+  height: 3em;
+  /*background-color: red;*/
+}
+
+.radius{
+  border-radius: 2px;
+  padding: 2px;
+}
+.FormaDePago{
+  position: absolute;
+  top: -2em;
+  z-index: 1111;
+  left: 19%;
+  padding: 1em;
+  display: none;
+  width: 45em;
+}
+.bagde-green{
+  width: 70px;
+  height: 40px;
+  padding: 0px 0px;
+  background: url(../img/bola_verde.png);
+  background-size: 100% 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title-pago{
+  display: flex;
+  align-items: center;
+  color: #656464;
+}
+.FormaDePago-title{
+  color: #656464;
+}
+.space-centrado{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 34em;
+}
+.deposito-container{
+  width: 23em;
+  display: none;
+}
+.img_hab{
+  height: 12em !important;
+}
+.ingresos, .egresos, .totales {
+  color: white;
+  width: 13%;
+  height: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  flex-wrap: wrap;
+}
+.ingresos{
+  background: #E91E63;
+}
+.ingresos:after{
+  content: "ingreso";
+  font-size: 15px;
+  width: 100%;
+  text-align: center;
+}
+.egresos{
+  background: #37474F;
+}
+.egresos:after{
+  content: "egreso";
+  font-size: 15px;
+  width: 100%;
+  text-align: center;
+}
+.totales {
+  background: #3F51B5;
+}
+.totales:after{
+  content: "total";
+  font-size: 15px;
+  width: 100%;
+  text-align: center;
+}
+.seccion-estadistica{
+  display: flex;
+  justify-content: space-around;
+
+}
+.signo{
+  font-size: 5em;
+  font-weight: bold;
+  margin: 0;
+}
+.habitacion-col{
+	width: 21em;
+	left: 13em;
+}
+.habitacion-col .card-image img {
+  height: 13em !important;
+}
+.oculto--cant{
+	position: absolute;
+	color: white;
+	right: 1em;
+	top: 2em;
+	font-size: 3em;
+	margin: 0;
+	text-shadow: 0px 1px 1.5px #795548;
+	border: 3px solid white;
+	border-radius: 50%;
+	padding: .5em;
+}
+.title--card{
+	font-size: 20px !important;
+	line-height: 27px !important;
+}
+
+.button-float{
+	position: absolute;
+	bottom: 4em;
+	left: 30em;
+}
+#think{
+	margin: 0;
+	color: #F44336;
+	position: absolute;
+	bottom: 1em;
+	left: 16em;
+	text-transform: uppercase;
+	text-shadow: 0px 1px 1.5px rgba(244, 67, 54, 0.98)
+}
+
+.number--hab:checked + .numeroHabitacion{
+	background: #F44336 !important;
+	transition: all ease .3s;
+	color: white;
+}
+.ProfileCard{
+	position: absolute;
+	z-index: 11111111;
+	width: 40%;
+	left: 30%;
+	top: 15%;
+}
+.ProfileCard--layout{
+	display: flex;
+	flex-wrap: wrap;
+}
+.ProfileCard figure{
+  margin: 0em;
+}
+
+.ProfileCard figure img{
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+}
+#MueblesYEnseresContainer{
+	position: absolute;
+	top: 2em;
+}
+
+.rigth{
+	float: right;
+}
+.mublesForm{
+	position: absolute;
+	top: 0em;
+	left: 26%;
+	padding: .5em;
+	width: 49%;
+	z-index: 111111111111;
+}
+.mublesForm__item{
+	display: flex;
+	align-items: center;
+}
+.mublesForm__title{
+	font-size: 1.3em;
+	text-align: center;
+	margin: 0;
+	background: #bfa145;
+	color: white;
+	padding: .5em;
+}
+.font_bold{
+	font-weight: bold;
+}
+.print-r, .print-init{
+	margin-bottom: .5em;
+}
+.print-r, .rep--hab, .print-init{
+	width: 11em !important;
+}
+.red-val{
+	background: #F44336;
+}
+.blue-val{
+	background: #3F51B5;
+}
+.red-val, .blue-val{
+	width: 25px;
+	height: 25px;
+	border-radius: 3px;
+	border: 1px solid white;
+}
+
+.valores-estadistica{
+	display: flex;
+  position: absolute;
+  bottom: 1em;
+  left: 40%;
+  width: 21em;
+  justify-content: space-between;
+}
+.valores__item{
+	display: flex;
+	justify-content: space-around;
+	width: 8em;
+	align-items: center;
+}
+.depart{
+  position: absolute;
+  top: -6em;
+  left: 4em;
+}
+.margin-right{
+  margin-right: 1em !important;
+}
+.modal-salir__header h2 {
+  font-size: 1.6em;
+  margin: 0;
+  padding: .3em;
+  text-transform: uppercase;
+}
+.modal-salir__body{
+  padding-bottom: .7em;
+}
+.margin-top-min{
+  margin-top: .5em;
+}

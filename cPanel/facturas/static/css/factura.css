@@ -1,0 +1,24 @@
+.FacturaHeader{
+  padding-top: 1em;
+}
+
+.Habitaciones, .Productos{
+  position: absolute;
+  top: -5em;
+  left: 21% !important;
+  z-index: 1111111111;
+  background: #f0f0f0;
+  display: none;
+  padding: 0 !important;
+}
+.Habitacion-item, .Productos-item{
+  position: relative;
+  border-bottom: 2px solid white;
+}
+.Habitacion-item:last-child, .Productos-item:last-child{
+  border-bottom: none;
+}
+.Habitaciones-body ul, .Productos-body ul{
+  overflow-y: scroll;
+  height: 10em;
+}
